@@ -6,3 +6,4 @@
 | Filière | `Fuel` | Type d'énergie primaire utilisé pour produire de l'électricité (nucléaire, gaz, charbon, hydraulique, éolien, solaire…). Chaque moyen de production appartient à une filière. |
 | Pilotable | `Fuel.isDispatchable()` | Se dit d'un moyen dont l'exploitant peut décider la puissance produite (nucléaire, gaz, charbon, hydraulique). S'oppose à **fatal**. |
 | Fatal (production fatale) | `!isDispatchable()` | Production imposée par la météo (vent, soleil) : on ne la décide pas, on la prend telle qu'elle vient. Éolien et solaire. |
+| Coût marginal | `EurosPerMegawattHour` | Coût de production d'un MWh supplémentaire par un moyen donné (surtout le combustible). Détermine sa place dans l'ordre de mérite. Peut être négatif dans des cas particuliers (production subventionnée) ; l'unité sert aussi aux prix de marché. |
