@@ -18,4 +18,3 @@ public enum Fuel {
         this.dispatchable = dispatchable;
     }
 }
-

@@ -33,4 +33,16 @@ class MegawattTest {
                 .isInstanceOf(IllegalArgumentException.class)
                 .hasMessage("Megawatt must be a finite non-negative number but it was " + value);
     }
+
+    @Test
+    void is_zero_returns_true_when_zero() {
+        assertThat(new Megawatt(0.0).isZero())
+                .isTrue();
+    }
+
+    @Test
+    void is_zero_returns_false_when_greater_than_zero() {
+        assertThat(new Megawatt(Double.MIN_VALUE).isZero())
+                .isFalse();
+    }
 }

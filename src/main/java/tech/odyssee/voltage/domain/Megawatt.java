@@ -9,4 +9,8 @@ public record Megawatt(double value) {
         // normalize -0.0 to 0.0 so that equals/hashCode are consistent
         value = value + 0.0;
     }
+
+    public boolean isZero() {
+        return value == 0.0;
+    }
 }
